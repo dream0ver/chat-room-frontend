@@ -1,8 +1,12 @@
-import { useRef } from "react"
+import { useRef, useEffect } from "react"
 import styles from "./ChatArea.module.scss"
 export default function ChatArea({ messages }) {
     const lastRef = useRef()
-    lastRef?.current?.scrollIntoView({ behavior: "smooth" })
+
+    useEffect(() => {
+        lastRef?.current?.scrollIntoView({ behavior: "smooth" })
+    }, [messages])
+
     return (
         <ul className={styles.container}>
             {messages?.map((item, idx) => (
