@@ -1,0 +1,31 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    input {
+        width: 250px;
+        outline: 0;
+        border: 0;
+        padding: 8px 16px;
+        border: 1px solid gray;
+        border-radius: 24px;
+        font-size: 16px;
+    }
+    button {
+        width: 250px;
+        background-color: rgb(96, 96, 255);
+        color: white;
+        outline: 0;
+        border: 0;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 24px;
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
