@@ -10,7 +10,7 @@ export default function Homescreen({ usr }) {
     const receiveAudioRef = useRef()
 
     const { sendMessage, lastMessage } = useWebSocket(
-        import.meta.env.VITE_SOCKET_URL || "ws://localhost:8080"
+        import.meta.env.VITE_SOCKET_URL || "ws://localhost:9847"
     )
 
     const updateChatHistory = ({ type, message, usr }) => {
